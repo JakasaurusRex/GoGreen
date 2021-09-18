@@ -2,3 +2,12 @@ body{
     background-color: #456990;
     font-family: 'Trebuchet MS', sans-serif;
 }
+
+.jumbotron {
+    margin: 0;
+    padding: 10px;
+}
+
+.jumbotron h1{
+    font-size: 2em;
+}
