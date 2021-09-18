@@ -3,8 +3,8 @@
     <head>
         <title> GoGreen </title>
         <link href="bootstrap-5.1.1-dist/bootstrap.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" >
-            <link href="/style.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
     </head>
 
     <body>
@@ -13,7 +13,7 @@
                 <h1> GoGreen </h1>
                 <p1> Enter your current location and destination to find how different modes of transporation effect the environment and your health! </p1>
 
-                <div class="form-horizontal">
+                <form class="form-horizontal">
                     <div class="form-group">
                         <label for="from" class="col-xs-2 control label"> From </label>
                         <div class="col-xs-4">
@@ -26,7 +26,11 @@
                             <input type="text" id="to" placeholder="Destination Location" class="form-control"> </input>
                         </div>
                     </div>
+                </form>
+                <div class="col xs offset-2 col-xs-10">
+                    <button class="btn btn-info btn-lg"><img src="btn.png"></img></button>
                 </div>
+
             </div>
 
         </div>
