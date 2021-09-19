@@ -15,24 +15,26 @@
                 <h1> GoGreen </h1>
                 <h2> Enter your current location and destination to find how different <br> modes of transporation effect the environment and your health! </h2>
 
-                <form>
-                    <div class="form-group row">
-                        <label for="currentlocation" class="col-lg-2 col-form-label">Current Location</label>
-                        <div class="col-lg-10">
-                          <input type="currentlocation" class="form-control form-control-lg" id="to" placeholder="Current Location">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="from" class="col-xs-2 control-label">Current Location</label>
+                        <div class="col-xs-4">
+                            <input type="text" id="from" placeholder="Current Location" class="form-control">
                         </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="to" class="col-lg-2 col-form-label">Destination</label>
-                        <div class="col-lg-10">
-                          <input type="to" class="form-control" id="to" placeholder="Destination">
+                   </div>
+                   <div class="form-group">
+                    
+                        <label for="to" class="col-xs-2 control-label">Destination</label>
+                        <div class="col-xs-4">
+                            <input type="text" id="to" placeholder="Destination" class="form-control">
                         </div>
-                    </div>
+                      
+                     </div>
+                     
                 </form>
                 
-                <div class="col xs offset-2 col-xs-10">
-                    <button class="btn btn-info btn-lg"><img src="btn.png"></img></button>
+                <div class="col-xs-offset-2 col-xs-10">
+                    <button class="btn btn-info btn-lg " onclick="calcRoute();"></button>
                 </div>
 
                 <div class="container-fluid">
@@ -48,6 +50,8 @@
         </div>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjpMJEpwK8cJ9eXOhNvgN_G1bZ7dPhVk8&libraries=places"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="Scripts/jquery-3.1.1.min.js"></script>
         <script src="app.js"> </script>
     </body>
 
