@@ -3,7 +3,9 @@
     <head>
         <title> GoGreen </title>
         <link href="bootstrap-5.1.1-dist/bootstrap.min.css" rel="stylesheet" />
+        <link href="bootstrap-5.1.1-dist/bootstrap.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+        <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"> </script>
         <link href="style.css" rel="stylesheet"/>
     </head>
 
@@ -11,31 +13,41 @@
         <div class="cheerio">
             <div class="container-fluid">
                 <h1> GoGreen </h1>
-                <p1> Enter your current location and destination to find how different modes of transporation effect the environment and your health! </p1>
+                <h2> Enter your current location and destination to find how different <br> modes of transporation effect the environment and your health! </h2>
 
-                <form class="form-horizontal">
-                    <div class="form-group">
-                        <label for="from" class="col-xs-2 control label"></label>
-                        <div class="col-xs-4">
-                            <input type="text" id="from" placeholder="Current Location" class="form-control"> </input>
+                <form>
+                    <div class="form-group row">
+                        <label for="currentlocation" class="col-lg-2 col-form-label">Current Location</label>
+                        <div class="col-lg-10">
+                          <input type="currentlocation" class="form-control form-control-lg" id="to" placeholder="Current Location">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="to" class="col-xs-2 control label"></label>
-                        <div class="col-xs-4">
-                            <input type="text" id="to" placeholder="Destination Location" class="form-control"> </input>
+
+                    <div class="form-group row">
+                        <label for="to" class="col-lg-2 col-form-label">Destination</label>
+                        <div class="col-lg-10">
+                          <input type="to" class="form-control" id="to" placeholder="Destination">
                         </div>
                     </div>
                 </form>
+                
                 <div class="col xs offset-2 col-xs-10">
                     <button class="btn btn-info btn-lg"><img src="btn.png"></img></button>
                 </div>
 
+                <div class="container-fluid">
+                    <div id="googleMap">
+        
+                    </div>
+                    <div id="output">
+        
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjpMJEpwK8cJ9eXOhNvgN_G1bZ7dPhVk8&libraries=places"></script>
         <script src="app.js"> </script>
     </body>
 

@@ -1,13 +1,26 @@
 body{
-    background-color: #456990;
+    background-color: #37AB2D;
     font-family: 'Trebuchet MS', sans-serif;
+    color: #FFFFFF;
+    text-align: center;
 }
 
-.jumbotron {
+.cheerio {
     margin: 0;
-    padding: 10px;
+    padding: 0px;
 }
 
-.jumbotron h1{
-    font-size: 2em;
+.cheerio h1{
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.cheerio h2{
+    font-size: 1em;
+}
+
+#googleMap {
+    width:75%;
+    height: 800px;  
+    margin-left: 12.5%;
 }
